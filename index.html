@@ -16,7 +16,8 @@
 <body onscroll="onScroll()" class="">
     <nav id="navigation" class="">
         <div class="wrapper">
-            <a class="logo" href="#"><svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a class="logo" href="#home">
+                <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 17.088V0.287999H5.16C8.12 0.287999 10.296 1.04 11.688 2.544C13.096 4.048 13.8 6.112 13.8 8.736C13.8 11.312 13.096 13.352 11.688 14.856C10.296 16.344 8.12 17.088 5.16 17.088H0ZM2.016 15.408H5.112C6.744 15.408 8.04 15.144 9 14.616C9.976 14.072 10.672 13.304 11.088 12.312C11.504 11.304 11.712 10.112 11.712 8.736C11.712 7.328 11.504 6.12 11.088 5.112C10.672 4.104 9.976 3.328 9 2.784C8.04 2.24 6.744 1.968 5.112 1.968H2.016V15.408Z" fill="#212529"/>
                 <path d="M22.4949 17.376C21.3749 17.376 20.3669 17.12 19.4709 16.608C18.5749 16.096 17.8629 15.376 17.3349 14.448C16.8229 13.504 16.5669 12.4 16.5669 11.136C16.5669 9.872 16.8309 8.776 17.3589 7.848C17.8869 6.904 18.5989 6.176 19.4949 5.664C20.4069 5.152 21.4229 4.896 22.5429 4.896C23.6629 4.896 24.6709 5.152 25.5669 5.664C26.4629 6.176 27.1669 6.904 27.6789 7.848C28.2069 8.776 28.4709 9.872 28.4709 11.136C28.4709 12.4 28.2069 13.504 27.6789 14.448C27.1509 15.376 26.4309 16.096 25.5189 16.608C24.6229 17.12 23.6149 17.376 22.4949 17.376ZM22.4949 15.648C23.1829 15.648 23.8229 15.48 24.4149 15.144C25.0069 14.808 25.4869 14.304 25.8549 13.632C26.2229 12.96 26.4069 12.128 26.4069 11.136C26.4069 10.144 26.2229 9.312 25.8549 8.64C25.5029 7.968 25.0309 7.464 24.4389 7.128C23.8469 6.792 23.2149 6.624 22.5429 6.624C21.8549 6.624 21.2149 6.792 20.6229 7.128C20.0309 7.464 19.5509 7.968 19.1829 8.64C18.8149 9.312 18.6309 10.144 18.6309 11.136C18.6309 12.128 18.8149 12.96 19.1829 13.632C19.5509 14.304 20.0229 14.808 20.5989 15.144C21.1909 15.48 21.8229 15.648 22.4949 15.648Z" fill="#212529"/>
                 <path d="M37.2261 17.376C36.0901 17.376 35.0661 17.12 34.1541 16.608C33.2581 16.08 32.5461 15.352 32.0181 14.424C31.5061 13.48 31.2501 12.384 31.2501 11.136C31.2501 9.888 31.5061 8.8 32.0181 7.872C32.5461 6.928 33.2581 6.2 34.1541 5.688C35.0661 5.16 36.0901 4.896 37.2261 4.896C38.6341 4.896 39.8181 5.264 40.7781 6C41.7541 6.736 42.3701 7.72 42.6261 8.952H40.5621C40.4021 8.216 40.0101 7.648 39.3861 7.248C38.7621 6.832 38.0341 6.624 37.2021 6.624C36.5301 6.624 35.8981 6.792 35.3061 7.128C34.7141 7.464 34.2341 7.968 33.8661 8.64C33.4981 9.312 33.3141 10.144 33.3141 11.136C33.3141 12.128 33.4981 12.96 33.8661 13.632C34.2341 14.304 34.7141 14.816 35.3061 15.168C35.8981 15.504 36.5301 15.672 37.2021 15.672C38.0341 15.672 38.7621 15.472 39.3861 15.072C40.0101 14.656 40.4021 14.072 40.5621 13.32H42.6261C42.3861 14.52 41.7781 15.496 40.8021 16.248C39.8261 17 38.6341 17.376 37.2261 17.376Z" fill="#212529"/>
@@ -31,9 +32,9 @@
 
              <div class="menu">
                 <ul>
-                     <li><a href="#">Início</a></li>
-                     <li><a href="#">Serviços</a></li>
-                     <li><a href="#">Sobre</a></li>
+                     <li><a onclick="closeMenu()" href="#home">Início</a></li>
+                     <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                     <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
                 </ul>
                      
                 <a class="button" href="#">Agente sua consulta</a>
@@ -91,42 +92,53 @@
            
         </div>
     </nav>
-     <header class="wrapper"><h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
-        <h1>Assistência médica simplificada para todos</h1>
-        <p>
-            Os médicos da DoctorCare vão além
-            dos sintomas para tratar a causa
-            raiz de sua 
-            doença e proporcionar uma cura a 
-            longo prazo.
-        </p>
-        <button>
-            <svg width ="20" 
-                height ="20" 
-                fill="#ffff" xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 48 48" 
-                width="20px" 
-                height="20px"><path d="M 24 3.9980469 C 12.972292 3.9980469 4 12.970339 4 23.998047 C 4 27.273363 4.8627078 30.334853 6.2617188 33.064453 L 4.09375 40.826172 C 3.5887973 42.629575 5.3719261 44.41261 7.1757812 43.908203 L 14.943359 41.740234 C 17.670736 43.136312 20.727751 43.998047 24 43.998047 C 35.027708 43.998047 44 35.025755 44 23.998047 C 44 12.970339 35.027708 3.9980469 24 3.9980469 z M 24 6.9980469 C 33.406292 6.9980469 41 14.591755 41 23.998047 C 41 33.404339 33.406292 40.998047 24 40.998047 C 20.998416 40.998047 18.190601 40.217527 15.742188 38.853516 A 1.50015 1.50015 0 0 0 14.609375 38.71875 L 7.2226562 40.779297 L 9.2851562 33.396484 A 1.50015 1.50015 0 0 0 9.1503906 32.261719 C 7.7836522 29.811523 7 27.002565 7 23.998047 C 7 14.591755 14.593708 6.9980469 24 6.9980469 z M 17.240234 15 C 16.921234 15 16.405797 15.119656 15.966797 15.597656 C 15.528797 16.073656 14.294922 17.228125 14.294922 19.578125 C 14.294922 21.928125 16.005141 24.197578 16.244141 24.517578 C 16.482141 24.834578 19.547344 29.812562 24.402344 31.726562 C 28.436344 33.316563 29.256812 32.999922 30.132812 32.919922 C 31.008813 32.841922 32.959422 31.766391 33.357422 30.650391 C 33.755422 29.534391 33.755672 28.579813 33.638672 28.382812 C 33.519672 28.183812 33.200656 28.063219 32.722656 27.824219 C 32.245656 27.585219 29.898937 26.430484 29.460938 26.271484 C 29.022938 26.112484 28.702766 26.031766 28.384766 26.509766 C 28.066766 26.987766 27.152047 28.062859 26.873047 28.380859 C 26.594047 28.700859 26.315891 28.740953 25.837891 28.501953 C 25.358891 28.260953 23.822094 27.757859 21.996094 26.130859 C 20.576094 24.865859 19.620797 23.302219 19.341797 22.824219 C 19.063797 22.348219 19.311781 22.086609 19.550781 21.849609 C 19.765781 21.635609 20.028578 21.292672 20.267578 21.013672 C 20.504578 20.734672 20.583188 20.53675 20.742188 20.21875 C 20.901188 19.90175 20.822125 19.621813 20.703125 19.382812 C 20.584125 19.143813 19.655469 16.780938 19.230469 15.835938 C 18.873469 15.041938 18.49725 15.024719 18.15625 15.011719 C 17.87825 15.000719 17.558234 15 17.240234 15 z"/></svg>
-                Agende sua consulta</button>
-    
-            <img src="img/image.svg" alt="Mulher negra vestindo moletom verde e sorrindo"/>
-           
-            <div class="stats">
-                <div class="stat">           
-                    <h3>+3.500</h3>
-                    <p>Pacientes atendidos</p>
-                </div>
+     <section id="home">
+        <div class="wrapper">
+            <header>
+                <h4>BOAS-VINDAS A DOCTORCARE 👋</h4>
+                <h1>Assistência médica simplificada para todos</h1>
+            </header>
 
-                <div class="stat">          
-                    <h3>+15</h3>
-                    <p>Especialistas disponíveis</p>
-                </div>
-
-                <div class="stat">           
-                    <h3>+10</h3>
-                    <p>Anos no mercado</p>
-                </div>
+            <div class="content">
+                <p>
+                    Os médicos da DoctorCare vão além
+                    dos sintomas para tratar a causa
+                    raiz de sua 
+                    doença e proporcionar uma cura a 
+                    longo prazo.
+                </p>
+                <button>
+                    <svg width ="20" 
+                        height ="20" 
+                        fill="#ffff" xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 48 48" 
+                        width="20px" 
+                        height="20px"><path d="M 24 3.9980469 C 12.972292 3.9980469 4 12.970339 4 23.998047 C 4 27.273363 4.8627078 30.334853 6.2617188 33.064453 L 4.09375 40.826172 C 3.5887973 42.629575 5.3719261 44.41261 7.1757812 43.908203 L 14.943359 41.740234 C 17.670736 43.136312 20.727751 43.998047 24 43.998047 C 35.027708 43.998047 44 35.025755 44 23.998047 C 44 12.970339 35.027708 3.9980469 24 3.9980469 z M 24 6.9980469 C 33.406292 6.9980469 41 14.591755 41 23.998047 C 41 33.404339 33.406292 40.998047 24 40.998047 C 20.998416 40.998047 18.190601 40.217527 15.742188 38.853516 A 1.50015 1.50015 0 0 0 14.609375 38.71875 L 7.2226562 40.779297 L 9.2851562 33.396484 A 1.50015 1.50015 0 0 0 9.1503906 32.261719 C 7.7836522 29.811523 7 27.002565 7 23.998047 C 7 14.591755 14.593708 6.9980469 24 6.9980469 z M 17.240234 15 C 16.921234 15 16.405797 15.119656 15.966797 15.597656 C 15.528797 16.073656 14.294922 17.228125 14.294922 19.578125 C 14.294922 21.928125 16.005141 24.197578 16.244141 24.517578 C 16.482141 24.834578 19.547344 29.812562 24.402344 31.726562 C 28.436344 33.316563 29.256812 32.999922 30.132812 32.919922 C 31.008813 32.841922 32.959422 31.766391 33.357422 30.650391 C 33.755422 29.534391 33.755672 28.579813 33.638672 28.382812 C 33.519672 28.183812 33.200656 28.063219 32.722656 27.824219 C 32.245656 27.585219 29.898937 26.430484 29.460938 26.271484 C 29.022938 26.112484 28.702766 26.031766 28.384766 26.509766 C 28.066766 26.987766 27.152047 28.062859 26.873047 28.380859 C 26.594047 28.700859 26.315891 28.740953 25.837891 28.501953 C 25.358891 28.260953 23.822094 27.757859 21.996094 26.130859 C 20.576094 24.865859 19.620797 23.302219 19.341797 22.824219 C 19.063797 22.348219 19.311781 22.086609 19.550781 21.849609 C 19.765781 21.635609 20.028578 21.292672 20.267578 21.013672 C 20.504578 20.734672 20.583188 20.53675 20.742188 20.21875 C 20.901188 19.90175 20.822125 19.621813 20.703125 19.382812 C 20.584125 19.143813 19.655469 16.780938 19.230469 15.835938 C 18.873469 15.041938 18.49725 15.024719 18.15625 15.011719 C 17.87825 15.000719 17.558234 15 17.240234 15 z"/>
+                    </svg>
+                        Agende sua consulta
+                </button>
+            
+                    <img src="assets/foto.png" alt="Mulher negra vestindo moletom verde e sorrindo"/>
             </div>
+           
+            
+                <div class="stats">
+                    <div class="stat">           
+                        <h3>+3.500</h3>
+                        <p>Pacientes atendidos</p>
+                    </div>
+
+                    <div class="stat">          
+                        <h3>+15</h3>
+                        <p>Especialistas disponíveis</p>
+                    </div>
+
+                    <div class="stat">           
+                        <h3>+10</h3>
+                        <p>Anos no mercado</p>
+                    </div>
+                </div>
+        </div>
  </header>
 
     <section id="services">
@@ -143,10 +155,10 @@
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
                     <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
+                    </svg>
 
-                    <h3>Problemas digestivos</h3>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                    <h3>Problemas Digestivos</h3>
+                    <p>Os principais sinais de problemas no sistema digestivo envolvem uma variedade de sintomas: perda de peso sem razão aparente, dor ou cólicas no abdômen, náuseas e vômitos, inchaço, queimação estomacal, azia, constipação, entre outros.</p>
                 </div>
 
                 <div class="card">
@@ -154,27 +166,83 @@
                     fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
                     <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-               </svg>
+                    </svg>
 
-                   <h3>Problemas digestivos</h3>
-                   <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
+                   <h3>Saúde Hormonal</h3>
+                   <p>Os problemas hormonais e desequilíbrio hormonais são muito comuns e podem provocar vários sintomas como excesso de fome, irritabilidade, cansaço excessivo ou insônia. Alterações hormonais podem gerar várias doenças como diabetes, hipotireoidismo, síndrome dos ovários policísticos, por exemplo.</p>
+               </div>
+
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" 
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+                    <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <h3>Bem-estar Mental</h3>
+                    <p>O bem estar mental é o equilíbrio das emoções e sentimentos. Assim, ele consiste em sentir-se bem consigo e conviver em paz com outras pessoas mesmo que algo ruim aconteça.</p>
+                </div>
+
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" 
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+                    <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                    <h3>Cuidados Pediátricos</h3>
+                    <p>A população pediátrica é subdividida em: recém-nascidos (0-1 mês), lactentes (1-24 meses), pré- escolares (2 a 5 anos), escolares (6 a 11 anos).</p>
+                </div>
+
+                <div class="card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" 
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+                    <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+    
+                   <h3>Autoimune e Inflamação</h3>
+                   <p>
+                    Uma doença autoimune ocorre por causa do mau funcionamento do sistema imunológico, em que o sistema ataca, por engano, tecidos saudáveis do próprio corpo. </p>
                </div>
 
                <div class="card">
-                <svg width="24" height="24" viewBox="0 0 24 24" 
-                fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
-                <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-           </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" 
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#DCE9E2"/>
+                    <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
 
-               <h3>Problemas digestivos</h3>
-               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.</p>
-           </div>
-           
+                    <h3>Saúde do Coração</h3>
+                    <p>O coração é o músculo mais importante do corpo. A cada batida ele fornece alimento e oxigênio às células. Um coração saudável é a chave para um corpo saudável, e seu coração precisa de exercícios para mantê-lo em forma.</p>
+                </div>
             </div>
         
         </div>
     </section>
+
+    <section id="about">
+         <div class="wrapper">
+             <header>
+                 <h4>SOBRE NÓS</h4>
+                 <h2>Entenda quem somos e por que existimos</h2>
+             </header>
+
+             <div class="content">
+                <p>
+                    A DoctorCare é um centro de excelência e referência na atenção à saúde. Constituída por um complexo de intervenção multidisciplinar de prevenção, diagnóstico, avaliação continuada e terapêutica em saúde, a DoctorCare, garante praticidade e conforto ao nosso cliente, ao oferecer vários exames e especialidades médicas em um único lugar. 
+                </p>
+
+                <img src="assets/doutor-feliz.png" alt="Doutor-feliz-segurando-prancheta-com-paciente">
+
+             </div>
+         </div>   
+    </section>
+
+
+
+    <!-- ScrollReaveal Lib -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js"></script>
 
